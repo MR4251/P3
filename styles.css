@@ -1,0 +1,38 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.custom-box {
+  background-color: #a7d0ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+  background-color: #14375a;
+  color: white;
+}
+
+.custom-link {
+  color: rgb(0, 17, 255);
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+a {
+  font-weight: 600;
+}
+
+.fun-fact-header {
+  background-color: #638aff;  /* Or a custom light blue */
+  color: #ffffff;
+  font-weight: 600;
+}
+
