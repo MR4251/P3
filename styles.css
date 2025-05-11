@@ -3,7 +3,6 @@ body {
 }
 
 
-
 .custom-box {
   background-color: #a7d0ff;
   padding: 20px;
@@ -31,8 +30,175 @@ a {
 }
 
 .fun-fact-header {
-  background-color: #638aff;  /* Or a custom light blue */
+  background-color: #638aff;  
   color: #ffffff;
   font-weight: 600;
 }
+
+.slide-img {
+  width: 100%;
+  max-width: 70%;
+  height: 480px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain; 
+  background-color: #ffffff; 
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #14375a;
+  font-weight: bold;
+  font-size: 28px;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(100, 100, 255, 0.8);
+  color: white;
+}
+
+.prev {
+  left: 150px;
+}
+
+.next {
+  right: 150px;
+}
+
+
+.slideshow-container {
+  position: relative;
+}
+
+.form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+.step-indicators {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.step-dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step-dot.active {
+  background-color: #0d6efd;
+  opacity: 1;
+}
+
+.btn-wrap {
+  text-align: right;
+  margin-top: 20px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+.caption {
+  position: absolute;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(20, 55, 90, 0.8);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 80%;
+}
+
+.footer {
+  background-color: #14375a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  width: 100vw;       
+  position: relative;
+  left: 0;
+}
+
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-full {
+  background-color: #14375a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  width: 100%;        
+  position: relative;
+  left: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-full {
+  background-color: #14375a;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+
+
+
 

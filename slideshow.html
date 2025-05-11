@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="page-wrapper d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mario Rivas</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="school.html">School</a></li>
+            <li class="nav-item"><a class="nav-link active" href="slideshow.html">Slideshow</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4 flex-grow-1">
+      <h1 class="text-center">Image Slideshow</h1>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="norwalk.png" class="slide-img" alt="Norwalk town sign">
+        </div>
+
+        <div class="mySlides">
+          <img src="gym.png" class="slide-img" alt="Inside of a gym">
+        </div>
+
+        <div class="mySlides">
+          <img src="cerritos.jpg" class="slide-img" alt="Cerritos College logo">
+        </div>
+
+        <div class="mySlides">
+          <img src="mario.jpg" class="slide-img" alt="Hand-painted Mario artwork signed by Charles Martinet">
+          <div class="caption">I painted this and got it signed by Charles Martinet, the voice of Mario</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+    </div>
+
+    <footer class="footer-full">
+      <div class="footer-content">
+        <p>© 2025 Mario Rivas</p>
+        <p>Built with HTML, CSS & Bootstrap</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="slideshow.js"></script>
+</body>
+</html>

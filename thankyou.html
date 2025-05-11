@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <title>Thank You</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -25,30 +25,10 @@
       </div>
     </nav>
 
-    <div class="container flex-grow-1 d-flex align-items-center justify-content-center">
-      <div class="form-container">
-        <h2 class="text-center mb-4">Contact</h2>
-        <form id="regForm" action="thankyou.html">
-          <div class="form-step active">
-            <label>Name:</label>
-            <input type="text" class="form-control" placeholder="First name..." required>
-            <input type="text" class="form-control" placeholder="Last name..." required>
-          </div>
-          <div class="form-step">
-            <label>Contact Info:</label>
-            <input type="email" class="form-control" placeholder="E-mail..." required>
-            <input type="tel" class="form-control" placeholder="Phone..." required>
-          </div>
-          <div class="btn-wrap">
-            <button type="button" class="btn btn-secondary me-2" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextPrev(1)">Next</button>
-          </div>
-          <div class="step-indicators mt-4 text-center">
-            <span class="step-dot"></span>
-            <span class="step-dot"></span>
-          </div>
-        </form>
-      </div>
+    <div class="container flex-grow-1 d-flex flex-column align-items-center justify-content-center text-center">
+      <h1 class="mb-3">Thank You!</h1>
+      <p class="lead">Your message has been successfully submitted.</p>
+      <a href="index.html" class="btn btn-primary mt-4">Return to Home</a>
     </div>
 
     <footer class="footer-full">
@@ -59,7 +39,6 @@
     </footer>
 
   </div>
-  <script src="contact.js"></script>
 </body>
 </html>
 
