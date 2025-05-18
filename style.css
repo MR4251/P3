@@ -1,0 +1,46 @@
+
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bg-primary-custom {
+  background-color: #0d6efd; 
+}
+
+.text-primary-custom {
+  color: #0d6efd;
+}
+
+.resume-header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #0b5ed7;
+}
+
+.profile-img {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.progress-bar {
+  background-color: #0d6efd;
+}
+
+footer {
+  background-color: #0d6efd;
+  color: white;
+  padding: 1rem;
+}
+
+footer a {
+  color: white;
+  margin-right: 10px;
+}
