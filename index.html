@@ -12,13 +12,16 @@
     <div class="page-wrapper d-flex flex-column min-vh-100">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Mario Rivas</a>
-          <div class="collapse navbar-collapse">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mario Rivas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="school.html">School</a></li>
+              
               <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
               <li class="nav-item"><a class="nav-link" href="slideshow.html">Slideshow</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -32,7 +35,8 @@
           <div class="col-md-6 custom-box">
             <h2>Welcome</h2>
             <p>I am Mario Rivas, a 22-year-old Computer Science major at Cerritos College. I grew up and still live in Norwalk, California. I plan to transfer to CSULB.</p>
-            <p>My dad was born in El Salvador, my mom in Mexico, and I’m the youngest of three siblings.</p>
+            <p>I’m half Salvadoran and half Mexican, and I’m the youngest of three siblings.</p>
+            
           </div>
 
           <div class="col-md-6 custom-box">
@@ -61,5 +65,31 @@
       </footer>
 
     </div>
-  </body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="storyModalLabel">My Story at a Glance</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            I grew up in Norwalk, California, the youngest of three siblings. I’m 22 years old and proudly half Salvadoran and half Mexican. I'm proud of my upbringing, which taught me loyalty, hard work, and the importance of family. I'm currently a Computer Science major with a passion for fitness, creativity, and self-improvement.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    var myModal = new bootstrap.Modal(document.getElementById('storyModal'));
+    myModal.show();
+  });
+</script>
+</body>
 </html>
